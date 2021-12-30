@@ -1,0 +1,20 @@
+[package]
+name = "aoc-2021"
+version = "0.1.0"
+edition = "2021"
+include = [
+    "**/*.rs", 
+    "Cargo.toml", 
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+day-01 = { path = "./day-01" }
+utils = { path = "./utils" }
+
+[workspace]
+members = [
+    "day-*",
+    "utils",
+]

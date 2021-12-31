@@ -52,8 +52,7 @@ mod tests {
 
         let lines = utils::FileHolder::
             build(INPUT_NAME).unwrap()
-            .list_lines();
-        
+            .list_lines();        
             
         let course_plane = calculate_course_plane_part_1(&lines);
 
@@ -66,8 +65,7 @@ mod tests {
 
         let lines = utils::FileHolder::
             build(INPUT_NAME).unwrap()
-            .list_lines();
-        
+            .list_lines();        
             
         let course_plane = calculate_course_plane_part_2(&lines);
 

@@ -1,5 +1,5 @@
 {
-  description = "Rust Project Template.";
+  description = "Advent of Code nix flake.";
 
   inputs = {
     naersk.url = "github:nmattia/naersk";
@@ -15,7 +15,7 @@
         let
           project-name = "aoc-2021";
           rust-channel = "stable";
-          rust-version = "latest"; # ex. 1.55.0
+          rust-version = "1.57.0";
           rust-overlay = import rust;
 
           pkgs = import nixpkgs {

@@ -19,11 +19,18 @@ impl FileHolder {
         }
     }
 
-    pub fn list_lines(self) -> Vec<u32> {
+    pub fn list_lines_by_int(self) -> Vec<u32> {
         BufReader::new(self.f)
             .lines()
             .map(|l| l.unwrap())
             .map(|s| s.parse::<u32>().unwrap())
             .collect::<Vec<u32>>()
+    }
+
+    pub fn list_lines(self) -> Vec<String> {
+        BufReader::new(self.f)
+            .lines()
+            .map(|l| l.unwrap())
+            .collect::<Vec<String>>()
     }
 }

@@ -1,4 +1,3 @@
-extern crate day_01;
 pub extern crate utils;
 
 #[allow(dead_code)]

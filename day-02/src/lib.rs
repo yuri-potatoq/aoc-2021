@@ -51,7 +51,7 @@ mod tests {
         let answer = 1488669;
 
         let lines = utils::FileHolder::
-            build(INPUT_NAME).unwrap()
+            build(INPUT_NAME).expect("Error on opened file")
             .list_lines();        
             
         let course_plane = calculate_course_plane_part_1(&lines);
@@ -64,7 +64,7 @@ mod tests {
         let answer = 1176514794;
 
         let lines = utils::FileHolder::
-            build(INPUT_NAME).unwrap()
+            build(INPUT_NAME).expect("Error on opened file")
             .list_lines();        
             
         let course_plane = calculate_course_plane_part_2(&lines);

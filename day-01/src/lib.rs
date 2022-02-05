@@ -27,7 +27,7 @@ mod tests {
         let answer = 1477;
 
         let lines = utils::FileHolder::
-            build(INPUT_NAME).unwrap()
+            build(INPUT_NAME).expect("Error on opened file")
             .list_lines_by_int();
 
         assert_eq!(answer, measurements_increased(lines));
@@ -38,7 +38,7 @@ mod tests {
         let answer = 1523;
 
         let lines = utils::FileHolder::
-            build(INPUT_NAME).unwrap()
+            build(INPUT_NAME).expect("Error on opened file")
             .list_lines_by_int();
 
         let windows_sum = sliding_windows(&lines, 3);

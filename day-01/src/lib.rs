@@ -42,6 +42,7 @@ mod tests {
             .list_lines_by_int();
 
         let windows_sum = sliding_windows(&lines, 3);
+        
         assert_eq!(answer, measurements_increased(windows_sum));
     }
 }

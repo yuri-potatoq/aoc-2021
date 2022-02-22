@@ -10,10 +10,7 @@ jobs:
       container: convco
 
       steps:
-        - uses: actions/checkout@main
-          with:
-            fetch-depth: 0
-
         - name: Conventional commits check
-
-        run: "convco check HEAD"
+          uses: actions/checkout@main
+          
+          run: "convco check HEAD"

@@ -3,12 +3,12 @@ on:
 
 jobs:
   check-conventionals:
-    commit-linter:      
-      runs-on: ubuntu-latest
-      container: convco
+    runs-on: ubuntu-latest
+    container:            
+      image: convco/convco
 
       steps:
-        - name: Conventional commits check
-          uses: actions/checkout@main
+        - uses: actions/checkout@main
           
+        - name: Conventional commits check
           run: "convco check HEAD"

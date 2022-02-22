@@ -8,5 +8,4 @@ jobs:
       image: convco/convco:latest
 
       steps:          
-        - run: |
-          echo "Tudo certo!"
+        - run: echo "Tudo certo!"

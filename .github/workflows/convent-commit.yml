@@ -5,8 +5,6 @@ jobs:
   check-conventionals:
     commit-linter:      
       runs-on: ubuntu-latest
-      name: check conventional commit compliance
-
       container: convco
 
       steps:
